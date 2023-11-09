@@ -1,1 +1,211 @@
-<p>Home page</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+      />
+        <!-- Load FontAwesome (for icons) -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous"
+      />
+  
+      <!-- Load Academicons (for more icons) -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous"
+      />
+
+       <!-- favicon -->
+      <link rel="shortcut icon" href="./image/website_logo.png" type="image/x-icon">
+
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Changyu Sun</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="" class="link"
+          >孙昌昱</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#education">Education</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Changyu Sun</span></h1>
+        <h2 class="about__role">Neuroscientist, bioinformatician, science-lover</h2>
+        <p class="about__desc">
+          I am a Ph.D. candidate in Neurobiology at <span class="about__name">University of Chicago</span>. <br>
+          <br>
+          I am amazed by how neural circuits with just a few interconnected neurons 
+          manage to perform sophisticated functions in learning and memory. <br>
+          <br>
+          My research primarily focuses on <u>how inhibitory circuits mediate olfactory learning and memory</u>.
+        </p>
+
+        <div class="about__contact center">
+
+          <a
+            href="https://scholar.google.com/citations?user=ZhmZHsAAAAAJ&hl=en"
+            aria-label="google scholar"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="ai ai-google-scholar"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/changyu-sun/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section class="section projects" id="projects" >
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Learning & Memory</h3>
+            <p class="project__description">
+              "Cells that fire together wire together." Hebbian theory suggests that assemblies are formed during sensory learning by strengthening the excitatory connections between co-active neurons, which is the basis of associative learning and memory. <br>
+              I am using olfactory cortex as a model to study changes in synaptic strength and neural activity with odor learning.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Hebbian plasticity</li>
+              <li class="project__stack-item">Cortical assembly</li>
+              <li class="project__stack-item">Olfactory learning</li>
+
+            </ul>
+
+            <a
+              href="http://www.ammoswald.com/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Circuits & Synpases</h3>
+            <p class="project__description">
+              VIP neurons preferentially inhibit other interneurons thus promotes LTP in pyramidal neurons via disinhibitory circuit. <br>
+              I am studying the activation mechanism of VIP neurons that gate the synaptic plasticity of exciatatory neurons and give rise to assembly formation in olfactory cortex.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Inhibitory circuit</li>
+              <li class="project__stack-item">Synaptic plasticity</li>
+              <li class="project__stack-item">VIP neurons</li>
+            </ul>
+
+            <a
+              href="http://www.ammoswald.com/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Modeling</h3>
+            <p class="project__description">
+              Building a network model with excitatory neurons and different classes of interneurons will allow us to have better understanding on the circuit mechanisms of selective assembly formation and/or suppression.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Network model</li>
+            </ul>
+
+            <a
+              href="http://www.ammoswald.com/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section education" id="education">
+        <h2 class="section__title">Education</h2>
+        <ul class="education__list">
+          <li class="education__list-item btn btn--plain"><span class="education__uchicago">University of Chicago</span><br>2021 — Present<br>Ph.D. in Neurobiology</li>
+          <li class="education__list-item btn btn--plain"><span class="education__hopkins">Johns Hopkins University</span><br>2018 - 2020<br>MSc in Bioinformatics</li>
+          <li class="education__list-item btn btn--plain"><span class="education__HZAU">Huazhong Agricultural University</span><br>2014 - 2018<br>BSc in Bioinformatics</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:changyus@uchicago.edu">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <!-- href link to be added -->
+    <footer class="footer">
+      <a
+        href="" 
+        class="link footer__link"
+      >
+        Changyu Sun
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
